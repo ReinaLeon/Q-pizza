@@ -1,0 +1,36 @@
+<div class="bgComponent">
+  <div class="menu">
+    <img src="https://muertealapizzafalsa.com/img/menu3.jpg" alt="menú" width="700" height="600">
+  </div>
+
+  <div class="form">
+    <mat-card class="card">
+      <mat-card-title>Q' quieres?</mat-card-title>
+      <mat-card-content>
+        <div class="container">
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.name"
+              matInput
+              placeholder="Q'pizza y cuantas?"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.description"
+              matInput
+              placeholder="más, menos o igual?"
+              required
+            />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button  (click)="saveTaskImg()" class="button" mat-raised-button>
+          pa' ya
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

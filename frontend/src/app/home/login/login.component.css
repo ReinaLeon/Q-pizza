@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100%;
+  background-image: url(https://media.istockphoto.com/vectors/seamless-trendy-pizza-slices-pattern-cute-vector-pizza-for-fabric-vector-id1047613642);
+  font-size: 20px;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(95, 21, 21, 0.247);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 16px 0px;
+}
+
+.bgComponent {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30%;
+}
+
+mat-card-title {
+  text-align: center;
+}

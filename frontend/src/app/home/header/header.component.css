@@ -1,0 +1,34 @@
+.headerSpacer {
+  flex: 1 1 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+ul {
+  margin: auto;
+}
+
+.bgHeader {
+  background-color: #000000;
+}
+
+mat-form-field {
+  margin: 5px 0px;
+  font-size: 15px;
+  width: 300px;
+  padding: 6px;
+}
+
+.dropdown-item {
+  background-color: #e91d1d;
+}
+
+a:hover,
+a:active {
+  color: rgba(161, 54, 54, 0.87);
+}

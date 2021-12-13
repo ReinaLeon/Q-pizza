@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="example-container col">
+      <h2 class="titulo">Ya Casi!</h2>
+
+      <div
+        cdkDropList
+        #todoList="cdkDropList"
+        [cdkDropListData]="taskTodo"
+        class="example-list"
+        (cdkDropListDropped)="drop($event)"
+      >
+        <div class="example-box" *ngFor="let item of taskTodo" cdkDrag>
+          <div class="accordion_display">
+            <div class="accordion_size">
+              <mat-accordion>
+                <mat-expansion-panel hideToggle="false">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <span>{{ item.name }}</span>
+                      <span class="spacer"></span>
+
+                      <button
+                        class="btnToDo"
+                        *ngIf="item.taskStatus == 'Ya casi'"
+                        mat-raised-button
+                      >
+                        {{ item.taskStatus }}
+                      </button>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-panel-description>
+                    {{ item.description }}
+                  </mat-panel-description>
+                  <mat-panel-description> </mat-panel-description>
+                  <mat-action-row>
+                    <span class="spacer"></span>
+                    <mat-icon color="primary" (click)="deleteTask(item)"
+                      >delete</mat-icon
+                    >
+                  </mat-action-row>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
